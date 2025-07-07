@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohit Bhai Panel</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: rgb(230,241,255);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(130deg, #4b6cb7, #182848);
+      color: white;
+      padding: 10px 0;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .header-container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .header-slide {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: transform 1s ease, opacity 1s ease;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .header-slide.active {
+      opacity: 1;
+    }
+    .header-slide.left {
+      transform: translate(-150%, -50%);
+    }
+    .header-slide.right {
+      transform: translate(150%, -50%);
+    }
+    .header-slide img {
+      max-height: 250px;
+      width: auto;
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-bottom: 13px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      margin-bottom: 4px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .contact a {
+      display: inline-block;
+      background: #4b6cb7;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    .contact a:hover {
+      background: #3a56a2;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #182848;
+      color: white;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container" id="headerSlider">
+      <div class="header-slide active">
+        <h2>Welcome to Mohit Bhai Panel</h2>
+        <p>Your destination for affordable, high-quality social media services across all major platforms. We help you grow faster, reach further, and make an impact online.</p>
+      </div>
+      <div class="header-slide">
+        <img src="solog.png" alt="Instagram">
+      </div>
+      <div class="header-slide">
+        <img src="solog1.jpg" alt="YouTube">
+      </div>
+      <div class="header-slide">
+        <img src="socio.jpg" alt="TikTok">
+      </div>
+    </div>
+  </header>
+
+  <div style="text-align:center; margin: 20px auto;">
+    <p style="color:orange; font-size: 18px; ">Ready to boost your presence? CONTACT US:</p>
+    <a href="https://t.me/Mohitbehelgaming" target="_blank" style="font-size: 16px; text-decoration:none;">@Mohitbehelgaming</a>
+  </div>
+
+  <section>
+    <div class="card">
+      <p style="font-size: 20px;">How It Works</p>
+      <p>Getting started is simple. First, we deposit funds into our panel account. Then we browse through a wide variety of services tailored for each platform — from boosting Instagram followers to increasing YouTube watch hours, we’ve got it all. Once you’ve chosen the right service, just confirm your order and we’ll handle the rest.</p>
+
+      <p>Every service includes a detailed description and an estimated delivery of work time so you know exactly what to expect. Our team ensures timely delivery and quality you can trust.</p>
+    </div>
+
+    <div class="card">
+      <p style="font-size:20px;">All-in-One Platform</p>
+      <p><a href="https://t.me/Mohitbehelgaming" target="_blank" style="font-size: 16px;">We</a> proudly support all major platforms:</p>
+      <ul>
+        <li>Instagram (Followers, Likes, Views, Poll Votes)</li>
+        <li>TikTok</li>
+        <li>YouTube (Subscribers, Likes, Comments, Watch Time)</li>
+        <li>WhatsApp</li>
+        <li>Discord</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>LinkedIn</li>
+        <li>And many more!</li>
+      </ul>
+      <p>No matter where your audience is, we help you reach them efficiently and affordably.</p>
+    </div>
+
+    <div class="card">
+      <h2>Why Choose <a href="https://t.me/Mohitbehelgaming" target="_blank" style="font-size: 26px;">Us</a></h2>
+      <p>We stand out because we offer:</p>
+      <ul>
+        <li>✅ Best price in the market</li>
+        <li>✅ Trusted by real clients with verified results</li>
+        <li>✅ Full transparency with descriptions and delivery timelines</li>
+        <li>✅ A wide range of services for all types of creators and influencers</li>
+        <li>✅ Demo available for just ₹25 (100 followers or 10K views)</li>
+      </ul>
+      <p>Our services are proven, reliable, and always up to date with current trends and algorithms.</p>
+    </div>
+
+    <div class="card contact">
+      <h2>Get Started</h2>
+      <p>Check our proof of delivery and ongoing results in our Telegram proof channel.</p>
+      <a href="https://t.me/instafollowers029" target="_blank">View Proof Channel</a>
+
+      <p>Ready to boost your presence? DM us directly for orders and queries:</p>
+      <a href="https://t.me/Mohitbehelgaming" target="_blank">@Mohitbehelgaming</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Mohit Bhai Panel. All rights reserved.
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll(".header-slide");
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove("active", "left", "right");
+        if (i === index) {
+          slide.classList.add("active");
+        } else {
+          slide.classList.add(i < index ? "left" : "right");
+        }
+      });
+    }
+
+    setInterval(() => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }, 5000);
+  </script>
+</body>
+</html>
