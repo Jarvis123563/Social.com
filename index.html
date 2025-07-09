@@ -248,5 +248,33 @@
     }, 1500);
   });
   </script>
+  <script>
+  const BIN_ID = "686e389e41e5ad77b37aa660";
+  const API_KEY = "$2a$10$OWB0wBTxocZeAjW4yY5pyOQwnVSUr5a3bovRM9LZM5NJI8zpiT3eS";
+
+  fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+    headers: {
+      "X-Master-Key": API_KEY
+    }
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Network response was not OK");
+    }
+    return response.json();
+  })
+  .then(data => {
+    const deal = data?.record?.deal;
+    if (deal && deal.trim()) {
+      document.getElementById("deal-slot").innerText = deal;
+    } else {
+      document.getElementById("deal-slot").innerText = "⚠️ No update today.";
+    }
+  })
+  .catch(error => {
+    console.error("Fetch error:", error);
+    document.getElementById("deal-slot").innerText = "⚠️ Unable to load today's deal.";
+  });
+  </script>
 </body>
 </html>
